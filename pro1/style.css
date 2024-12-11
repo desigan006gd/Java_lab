@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    letter-spacing: 0.3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(230,230,230) ;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    z-index: 1000;
+    box-shadow: 0px 0px 8px -1px #000000;
+}
+
+.logo{
+    /* background-color: aliceblue; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    
+}
+
+.logo h2{
+   cursor: pointer;
+    font-weight: 2;
+    font-size: 1.9vw;
+    margin-left: 0.5vw;
+}
+
+
+.logo  a{
+    text-decoration: none;
+    color: rgb(236,85,108);
+}
+
+.logo img{
+    width: 10%;
+}
+
+.navigators{
+    /* background-color: antiquewhite; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.navigators ul li {
+    /* background-color: aliceblue; */
+    list-style: none;
+    display: flex;
+    font-size: 1.22vw;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.navigators ul li a{
+    text-decoration: none;
+    color: rgb(112,112,112);
+}
+
+.navigators ul{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap:5%;
+    padding-right: 4%;
+}
+
+#profile-pic{
+    width: 2vw;
+    border-radius: 50%;
+}
+
+.home{
+    background-color: rgb(224,24,57);
+    display: flex;
+    width: 100vw;
+    height: 75vh;
+    padding-top: 6vw;
+}
+
+.home .left{
+    /* background-color: pink; */
+    width: 50%;
+    padding-left: 5.1%;
+    padding-top: 9.5%;
+    color: white;
+}
+
+.home .left h1{
+    font-weight: 100;
+    font-size: 2.1vw;
+    margin-bottom: 2vw;
+    letter-spacing: 1px;
+}
+
+
+.home .search{
+    /* background-color: wheat; */
+    display: flex;
+    justify-content: space-between;
+    width: 43.7vw;
+}
+
+.home .search .box{
+    background-color: white;
+    width: 80%;
+    color: rgb(40,43,62);
+    display: flex;
+    align-items: center;
+    height: 3.45vw;
+    padding-left: 2%;
+    border-radius: 5px;
+}
+
+.home .search .box i{
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+
+.home .search .box input{
+    width: 80%;
+    height: 80%;
+    font-size: 1.4vw;
+    border: none;
+    outline: none;
+}
+
+.home .search .box input::placeholder{
+    color: rgb(28, 30, 43);
+    font-size: 1.4vw;
+}
+
+.home .search button{
+    background-color: rgb(254,180,78);
+    border: none;
+    width: 7vw;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3vw;
+}
+
+.home .home-buttons{
+    /* background-color: aliceblue; */
+    margin-top: 4%;
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.home .home-buttons button{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10vw;
+    padding: 0.3vw;
+    font-size: 0.8vw;
+    width: 8vw;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.home .right{
+    /* background-color: aliceblue; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.home .right img{
+    width: 37vw;
+    margin-bottom: 10%;
+}
+
+.flex-box{
+    /* background-color: aqua; */
+    width: 78vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 69%;
+}
+
+.flex-box .report{
+    background-color: white;
+    width: 14.5vw;
+    height: 13vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px -3px #000000;
+    border-radius: 5px;
+    padding: 1vw;
+}
+
+.flex-box .report a{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: rgb(196, 190, 190);
+}
+
+.flex-box .report i{
+    font-size: 400%;
+    margin-bottom: 10%;
+}
+
+.flex-box .report p{
+    margin-bottom: 5%;
+    color: black;
+}
+
+.frequently{
+    /* background-color: aqua;   */
+    width: 88vw;
+    margin-top: 14%;
+    text-align: center;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 5%; */
+    margin-bottom: 5vw;
+}
+
+.frequently p{
+    margin-bottom: 2.5%;
+}
+
+.frequently .freq-boxs{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 24vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.frequently .freq-boxs .zoom{
+    background-color: white;
+    width: 21.93vw;
+    height: 11.8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4vw;
+    gap: 1vw;
+}
+
+.frequently .freq-boxs .zoom i{
+    font-size: 4vw;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+.my{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+    width: 88vw;
+}
+
+.my .inci , .request {
+    background-color: white;
+    width: 24.4vw;
+    height: 32vw;
+    border-radius: 5px;
+    padding: 2vw 2vw 2vw 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.my .head{
+    /* background-color: antiquewhite; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my .head .left{
+    width: 50%;
+    /* background-color: rgb(48, 75, 99); */
+    display: flex;
+    align-items: center;
+    font-size: 1.2vw;
+}
+
+.my .head .left span{
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: rgb(222,222,223);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 0.9vw;
+    justify-content: center;
+    margin-left: 0.5vw;
+}
+
+.my .head .right {
+    font-size: 0.9vw;
+    display: flex;
+    align-items: center;
+    color: rgb(100, 198, 236);
+}
+
+.my .cont{
+    /* background-color: aquamarine; */
+    width: 100%;
+}
+
+.my .one{
+    width:100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    margin-top: 1vw;
+    padding: 1vw 0vw 1vw 0vw;
+    border-bottom: 1px solid rgb(230,230,230);
+    align-items: center;
+}
+
+
+.my .one_last{
+    width:100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    margin-top: 1vw;
+    padding: 1vw 0vw 1vw 0vw;
+    align-items: center;
+}
+
+
+.my .alert{
+    display: flex;
+    background-color: rgb(252,102,129);
+    width: 10%;
+    height: 10%;
+    padding: 0.5vw;
+    border-radius: 50%;
+    color: white;
+}
+
+.my .mes{
+    /* background-color: aqua; */
+    font-size: 0.9vw;
+    width: 57%;
+    margin-left: 1vw;
+}
+
+.my .closed{
+    /* border: 2px solid rgb(240, 253, 240); */
+    background-color: rgb(226,245,239);
+    color: rgb(102,200,171);
+    font-size: 0.9vw;
+    padding: 0.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5vw;
+}
+
+.my .mes p{
+    margin-bottom: 0.7vw;
+    
+}
+
+
+.my .alertt{
+    display: flex;
+    /* background-color: rgb(252,102,129); */
+    width: 10%;
+    height: 10%;
+    padding: 0.5vw;
+    
+    /* border-radius: 50%; */
+}
+
+.my .alertt svg{
+    width: 100%;
+}
+
+.course{
+    background-color: white;
+    width: 24.4vw;
+    height: 32vw;
+    border-radius: 5px;
+    padding: 2vw 2vw 2vw 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-items: end;
+}
+
+.course .head{
+    background-color: aliceblue;
+    margin-bottom: 2vw;
+}
+
+.course .content{
+    width: 100%;
+    /* background-color: antiquewhite; */
+    font-size: 0.8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.course .content select{
+    width: 100%;
+    height: 2.8vw;
+    font-size: 0.9vw;
+    border: 1px solid #E5E5E5;
+    color: rgb(161,161,161);
+    border-radius: 5px;
+}
+
+.course .content input{
+    width: 100%;
+    height: 2.8vw;
+    font-size: 0.9vw;
+    border: 1px solid #E5E5E5;
+    color: rgb(161,161,161);
+    border-radius: 5px;
+    padding-left: 0.5vw;
+}
+
+.course .btn{
+    margin-top: 2vw;
+}
+
+.course .btn button{
+    background-color: rgb(227,2,36);
+    padding: 0.8vw;
+    border-radius: 5px;
+    border: none;
+    font-size: 1vw;
+    color: white;
+}
+
+
+.aa{
+    width: 100vw;
+    background-color: #000000;
+    height: 10vw;
+    margin-top: 5vw;
+}
